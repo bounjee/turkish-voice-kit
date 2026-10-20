@@ -1,0 +1,12 @@
+{
+  "name": "turkish-tts-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "score": "tsx score.ts",
+    "listen": "tsx listen.ts"
+  },
+  "dependencies": {
+    "tr-speech": "*"
+  }
+}

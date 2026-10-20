@@ -1,0 +1,994 @@
+[
+ {
+  "model": "alania-2",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 2.3,
+  "wer_whisper_ci": [
+   1,
+   3.8
+  ],
+  "wer_scribe": 1.4,
+  "wer_scribe_ci": [
+   0.4,
+   2.6
+  ],
+  "wer_gemini": 1.8,
+  "wer_gemini_ci": [
+   0.4,
+   3.3
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 92.6,
+  "critical_ci": [
+   86.4,
+   97.5
+  ],
+  "critical_at_least_one": 96.3,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 95.1
+  },
+  "missed": [
+   "alfa-iban",
+   "alfa-kampanya-kodu",
+   "birlesik-paket",
+   "eposta-info",
+   "eposta-link",
+   "telefon-guncelle"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "9/10",
+   "date-time": "15/15",
+   "alphanumeric": "8/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "5/7",
+   "unit-percent": "8/8",
+   "combined": "10/11"
+  }
+ },
+ {
+  "model": "alania-2",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 3.1,
+  "wer_whisper_ci": [
+   2,
+   4.4
+  ],
+  "wer_scribe": 1.3,
+  "wer_scribe_ci": [
+   0.5,
+   2.1
+  ],
+  "wer_gemini": 1.4,
+  "wer_gemini_ci": [
+   0.6,
+   2.5
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 92.2,
+  "critical_ci": [
+   87.1,
+   97.4
+  ],
+  "critical_at_least_one": 94.8,
+  "missed": [
+   "birlesik-paket",
+   "eposta-info",
+   "eposta-kullanici-adi",
+   "eposta-link",
+   "kisaltma-ce-tse",
+   "marka-iyzico",
+   "marka-iphone-qr",
+   "marka-maps",
+   "marka-paket-adlari"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "brand": "11/15",
+   "abbreviation": "9/10",
+   "proper-name": "12/12",
+   "email-web": "4/7",
+   "unit-percent": "8/8",
+   "combined": "10/11"
+  }
+ },
+ {
+  "model": "anka-tts",
+  "track": "spoken",
+  "clips": 35,
+  "failed": 0,
+  "wer_whisper": 2.9,
+  "wer_whisper_ci": [
+   0.9,
+   5.4
+  ],
+  "wer_scribe": 0.8,
+  "wer_scribe_ci": [
+   0,
+   2.7
+  ],
+  "wer_gemini": 1.3,
+  "wer_gemini_ci": [
+   0,
+   3.3
+  ],
+  "critical_sentences": 35,
+  "critical_correct": 100,
+  "critical_ci": [
+   100,
+   100
+  ],
+  "critical_at_least_one": 100,
+  "text_track_same_sentences": {
+   "critical_sentences": 35,
+   "critical_correct": 65.7
+  },
+  "missed": [],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "10/10"
+  }
+ },
+ {
+  "model": "anka-tts",
+  "track": "text",
+  "clips": 106,
+  "failed": 0,
+  "wer_whisper": 8.6,
+  "wer_whisper_ci": [
+   5,
+   12.6
+  ],
+  "wer_scribe": 6.2,
+  "wer_scribe_ci": [
+   3.5,
+   9.5
+  ],
+  "wer_gemini": 2.6,
+  "wer_gemini_ci": [
+   1.5,
+   3.8
+  ],
+  "critical_sentences": 47,
+  "critical_correct": 66,
+  "critical_ci": [
+   53.2,
+   78.7
+  ],
+  "critical_at_least_one": 74.5,
+  "missed": [
+   "alfa-plaka",
+   "eposta-gmail",
+   "isim-mahalle",
+   "marka-iphone-qr",
+   "tarih-calisma-saati",
+   "tarih-ucak",
+   "tarih-yarin-sabah",
+   "telefon-0850",
+   "telefon-arti-doksan",
+   "telefon-dahili",
+   "telefon-guncelle",
+   "telefon-cep",
+   "telefon-kimlik-son-dort",
+   "telefon-kod",
+   "telefon-sabit",
+   "telefon-sonu"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "1/10",
+   "date-time": "8/11",
+   "alphanumeric": "0/1",
+   "brand": "1/2",
+   "abbreviation": "1/1",
+   "proper-name": "0/1",
+   "email-web": "0/1",
+   "unit-percent": "1/1",
+   "combined": "1/1"
+  }
+ },
+ {
+  "model": "antalia-2-mini",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 5,
+  "wer_whisper_ci": [
+   2,
+   9.3
+  ],
+  "wer_scribe": 0.4,
+  "wer_scribe_ci": [
+   0,
+   0.9
+  ],
+  "wer_gemini": 0.5,
+  "wer_gemini_ci": [
+   0,
+   1.4
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 97.5,
+  "critical_ci": [
+   93.8,
+   100
+  ],
+  "critical_at_least_one": 98.8,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 97.5
+  },
+  "missed": [
+   "alfa-kampanya-kodu",
+   "eposta-link"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "9/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "6/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "antalia-2-mini",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 3.3,
+  "wer_whisper_ci": [
+   1.9,
+   5
+  ],
+  "wer_scribe": 0.7,
+  "wer_scribe_ci": [
+   0.3,
+   1.2
+  ],
+  "wer_gemini": 1,
+  "wer_gemini_ci": [
+   0.4,
+   1.8
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 94,
+  "critical_ci": [
+   88.8,
+   97.4
+  ],
+  "critical_at_least_one": 99.1,
+  "missed": [
+   "eposta-kullanici-adi",
+   "eposta-link",
+   "isim-gulsah",
+   "kisaltma-sgk",
+   "marka-crm-pms",
+   "marka-iphone-qr",
+   "marka-iyzico"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "brand": "12/15",
+   "abbreviation": "9/10",
+   "proper-name": "11/12",
+   "email-web": "5/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "cartesia-sonic-3.6",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 0.9,
+  "wer_whisper_ci": [
+   0,
+   2.2
+  ],
+  "wer_scribe": 0.5,
+  "wer_scribe_ci": [
+   0,
+   1.4
+  ],
+  "wer_gemini": 0.4,
+  "wer_gemini_ci": [
+   0,
+   1.2
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 98.8,
+  "critical_ci": [
+   96.3,
+   100
+  ],
+  "critical_at_least_one": 98.8,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 98.8
+  },
+  "missed": [
+   "eposta-link"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "6/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "cartesia-sonic-3.6",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 5.3,
+  "wer_whisper_ci": [
+   2.9,
+   7.9
+  ],
+  "wer_scribe": 1.8,
+  "wer_scribe_ci": [
+   0.8,
+   2.9
+  ],
+  "wer_gemini": 1.6,
+  "wer_gemini_ci": [
+   0.7,
+   2.7
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 98.3,
+  "critical_ci": [
+   95.7,
+   100
+  ],
+  "critical_at_least_one": 100,
+  "missed": [
+   "eposta-link",
+   "marka-iyzico"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "brand": "14/15",
+   "abbreviation": "10/10",
+   "proper-name": "12/12",
+   "email-web": "6/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "elevenlabs-v4",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 2.1,
+  "wer_whisper_ci": [
+   0.7,
+   3.8
+  ],
+  "wer_scribe": 0.4,
+  "wer_scribe_ci": [
+   0,
+   1.2
+  ],
+  "wer_gemini": 0.4,
+  "wer_gemini_ci": [
+   0,
+   1.1
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 100,
+  "critical_ci": [
+   100,
+   100
+  ],
+  "critical_at_least_one": 100,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 98.8
+  },
+  "missed": [],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "7/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "elevenlabs-v4",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 4.1,
+  "wer_whisper_ci": [
+   2.5,
+   5.9
+  ],
+  "wer_scribe": 1.1,
+  "wer_scribe_ci": [
+   0.4,
+   1.9
+  ],
+  "wer_gemini": 1.3,
+  "wer_gemini_ci": [
+   0.5,
+   2.2
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 96.6,
+  "critical_ci": [
+   93.1,
+   99.1
+  ],
+  "critical_at_least_one": 99.1,
+  "missed": [
+   "eposta-destek",
+   "kisaltma-kvkk",
+   "kisaltma-sgk",
+   "marka-iyzico"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "brand": "14/15",
+   "abbreviation": "8/10",
+   "proper-name": "12/12",
+   "email-web": "6/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "ema-lightning",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 1.4,
+  "wer_whisper_ci": [
+   0.2,
+   3.1
+  ],
+  "wer_scribe": 0.5,
+  "wer_scribe_ci": [
+   0,
+   1.4
+  ],
+  "wer_gemini": 0.5,
+  "wer_gemini_ci": [
+   0,
+   1.5
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 93.8,
+  "critical_ci": [
+   87.7,
+   98.8
+  ],
+  "critical_at_least_one": 97.5,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 93.8
+  },
+  "missed": [
+   "alfa-siparis-kodu",
+   "alfa-plaka",
+   "eposta-link",
+   "eposta-site",
+   "olcu-kartvizit"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "8/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "5/7",
+   "unit-percent": "7/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "ema-lightning",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 6.3,
+  "wer_whisper_ci": [
+   4.3,
+   8.7
+  ],
+  "wer_scribe": 4.5,
+  "wer_scribe_ci": [
+   2.8,
+   6.4
+  ],
+  "wer_gemini": 3.5,
+  "wer_gemini_ci": [
+   2,
+   5.3
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 89.7,
+  "critical_ci": [
+   84.5,
+   94.8
+  ],
+  "critical_at_least_one": 92.2,
+  "missed": [
+   "alfa-plaka",
+   "eposta-link",
+   "eposta-panel",
+   "eposta-info",
+   "kisaltma-kvkk",
+   "kisaltma-otv-mtv",
+   "marka-crm-pms",
+   "marka-iphone-qr",
+   "marka-instagram",
+   "marka-messenger",
+   "kisaltma-mr-ekg",
+   "telefon-arti-doksan"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "9/10",
+   "date-time": "15/15",
+   "alphanumeric": "9/10",
+   "brand": "11/15",
+   "abbreviation": "7/10",
+   "proper-name": "12/12",
+   "email-web": "4/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "freya-tts-1-hd",
+  "track": "spoken",
+  "clips": 48,
+  "failed": 0,
+  "wer_whisper": 1.8,
+  "wer_whisper_ci": [
+   0,
+   4.5
+  ],
+  "wer_scribe": 1.1,
+  "wer_scribe_ci": [
+   0,
+   2.7
+  ],
+  "wer_gemini": 0.7,
+  "wer_gemini_ci": [
+   0,
+   2.3
+  ],
+  "critical_sentences": 48,
+  "critical_correct": 97.9,
+  "critical_ci": [
+   93.8,
+   100
+  ],
+  "critical_at_least_one": 100,
+  "text_track_same_sentences": {
+   "critical_sentences": 48,
+   "critical_correct": 81.3
+  },
+  "missed": [
+   "tarih-kampanya"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "14/15",
+   "alphanumeric": "8/8"
+  }
+ },
+ {
+  "model": "freya-tts-1-hd",
+  "track": "text",
+  "clips": 110,
+  "failed": 0,
+  "wer_whisper": 7.9,
+  "wer_whisper_ci": [
+   4.1,
+   12.6
+  ],
+  "wer_scribe": 6.8,
+  "wer_scribe_ci": [
+   3.6,
+   10.4
+  ],
+  "wer_gemini": 3.1,
+  "wer_gemini_ci": [
+   1.4,
+   5.1
+  ],
+  "critical_sentences": 51,
+  "critical_correct": 82.4,
+  "critical_ci": [
+   70.6,
+   92.2
+  ],
+  "critical_at_least_one": 90.2,
+  "missed": [
+   "fiyat-daire",
+   "fiyat-simge-once",
+   "fiyat-uc-paket",
+   "fiyat-taksit",
+   "tarih-kampanya",
+   "tarih-noktali",
+   "telefon-arti-doksan",
+   "telefon-guncelle",
+   "telefon-sabit"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "11/15",
+   "phone": "7/10",
+   "date-time": "13/15",
+   "alphanumeric": "8/8"
+  }
+ },
+ {
+  "model": "gemini-3.8-flash-tts",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 3.4,
+  "wer_whisper_ci": [
+   1.4,
+   6
+  ],
+  "wer_scribe": 1.1,
+  "wer_scribe_ci": [
+   0,
+   2.5
+  ],
+  "wer_gemini": 0.9,
+  "wer_gemini_ci": [
+   0,
+   2.3
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 100,
+  "critical_ci": [
+   100,
+   100
+  ],
+  "critical_at_least_one": 100,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 100
+  },
+  "missed": [],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "7/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "gemini-3.8-flash-tts",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 3.2,
+  "wer_whisper_ci": [
+   2,
+   4.9
+  ],
+  "wer_scribe": 1.5,
+  "wer_scribe_ci": [
+   0.8,
+   2.3
+  ],
+  "wer_gemini": 0.9,
+  "wer_gemini_ci": [
+   0.3,
+   1.7
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 99.1,
+  "critical_ci": [
+   97.4,
+   100
+  ],
+  "critical_at_least_one": 100,
+  "missed": [
+   "marka-iyzico"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "brand": "14/15",
+   "abbreviation": "10/10",
+   "proper-name": "12/12",
+   "email-web": "7/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "openai-gpt-4o-mini-tts",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 7.8,
+  "wer_whisper_ci": [
+   4.4,
+   12.2
+  ],
+  "wer_scribe": 3,
+  "wer_scribe_ci": [
+   0.6,
+   6.1
+  ],
+  "wer_gemini": 2.3,
+  "wer_gemini_ci": [
+   0.2,
+   5.3
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 93.8,
+  "critical_ci": [
+   88.9,
+   98.8
+  ],
+  "critical_at_least_one": 96.3,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 84
+  },
+  "missed": [
+   "birlesik-eposta",
+   "eposta-gmail",
+   "eposta-link",
+   "birlesik-adres",
+   "birlesik-oda-fiyati"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "10/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "5/7",
+   "unit-percent": "8/8",
+   "combined": "8/11"
+  }
+ },
+ {
+  "model": "openai-gpt-4o-mini-tts",
+  "track": "text",
+  "clips": 189,
+  "failed": 0,
+  "wer_whisper": 12.1,
+  "wer_whisper_ci": [
+   8.9,
+   15.5
+  ],
+  "wer_scribe": 4.7,
+  "wer_scribe_ci": [
+   2.9,
+   6.8
+  ],
+  "wer_gemini": 3.8,
+  "wer_gemini_ci": [
+   2.4,
+   5.4
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 87.1,
+  "critical_ci": [
+   81,
+   93.1
+  ],
+  "critical_at_least_one": 91.4,
+  "missed": [
+   "alfa-iban",
+   "alfa-siparis-kodu",
+   "alfa-yedi-yirmidort",
+   "fiyat-kiralama",
+   "isim-cagri",
+   "isim-mahalle",
+   "marka-iyzico",
+   "olcu-daire",
+   "olcu-kartvizit",
+   "telefon-0850",
+   "telefon-dahili",
+   "telefon-sabit",
+   "birlesik-calisma-saatleri",
+   "birlesik-eposta",
+   "telefon-arti-doksan"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "14/15",
+   "phone": "6/10",
+   "date-time": "15/15",
+   "alphanumeric": "7/10",
+   "brand": "14/15",
+   "abbreviation": "10/10",
+   "proper-name": "10/12",
+   "email-web": "7/7",
+   "unit-percent": "6/8",
+   "combined": "9/11"
+  }
+ },
+ {
+  "model": "trendyol-tts",
+  "track": "spoken",
+  "clips": 84,
+  "failed": 0,
+  "wer_whisper": 2.5,
+  "wer_whisper_ci": [
+   0.9,
+   4.5
+  ],
+  "wer_scribe": 0.5,
+  "wer_scribe_ci": [
+   0,
+   1.4
+  ],
+  "wer_gemini": 0.7,
+  "wer_gemini_ci": [
+   0,
+   1.7
+  ],
+  "critical_sentences": 81,
+  "critical_correct": 97.5,
+  "critical_ci": [
+   93.8,
+   100
+  ],
+  "critical_at_least_one": 97.5,
+  "text_track_same_sentences": {
+   "critical_sentences": 81,
+   "critical_correct": 61.7
+  },
+  "missed": [
+   "alfa-plaka",
+   "eposta-link"
+  ],
+  "by_category": {
+   "price": "15/15",
+   "phone": "10/10",
+   "date-time": "15/15",
+   "alphanumeric": "9/10",
+   "abbreviation": "3/3",
+   "proper-name": "2/2",
+   "email-web": "6/7",
+   "unit-percent": "8/8",
+   "combined": "11/11"
+  }
+ },
+ {
+  "model": "trendyol-tts",
+  "track": "text",
+  "clips": 189,
+  "failed": 7,
+  "wer_whisper": 19.3,
+  "wer_whisper_ci": [
+   14,
+   24.9
+  ],
+  "wer_scribe": 22.3,
+  "wer_scribe_ci": [
+   16.3,
+   28.9
+  ],
+  "wer_gemini": 12.2,
+  "wer_gemini_ci": [
+   7.9,
+   16.9
+  ],
+  "critical_sentences": 116,
+  "critical_correct": 69.8,
+  "critical_ci": [
+   62.1,
+   78.4
+  ],
+  "critical_at_least_one": 83.6,
+  "missed": [
+   "alfa-iban",
+   "alfa-kampanya-kodu",
+   "alfa-plaka",
+   "fiyat-daire",
+   "fiyat-hediye-ceki",
+   "fiyat-kapora",
+   "fiyat-kiralama",
+   "fiyat-paket",
+   "fiyat-uc-paket",
+   "fiyat-yillik",
+   "isim-mahalle",
+   "kisaltma-iban-sms",
+   "kisaltma-tc",
+   "marka-iphone-qr",
+   "marka-crm-pms",
+   "marka-iyzico",
+   "olcu-daire",
+   "olcu-mesafe",
+   "tarih-kampanya",
+   "tarih-giris-cikis",
+   "tarih-noktali",
+   "tarih-yarin-sabah",
+   "telefon-0850",
+   "telefon-cep",
+   "telefon-kod",
+   "telefon-sabit",
+   "telefon-siparis-no",
+   "telefon-sonu",
+   "fiyat-indirim",
+   "fiyat-simge-once",
+   "telefon-arti-doksan",
+   "eposta-link",
+   "olcu-yuzde-yirmi",
+   "olcu-memnuniyet",
+   "birlesik-oda-fiyati"
+  ],
+  "by_category": {
+   "dialogue": "3/3",
+   "price": "6/15",
+   "phone": "3/10",
+   "date-time": "11/15",
+   "alphanumeric": "7/10",
+   "brand": "12/15",
+   "abbreviation": "8/10",
+   "proper-name": "11/12",
+   "email-web": "6/7",
+   "unit-percent": "4/8",
+   "combined": "10/11"
+  }
+ }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "livekit-voice-guards",
+  "version": "0.1.0",
+  "description": "Production fixes for LiveKit Agents (JS) voice pipelines: Gemini Live STT, a level gate in front of the VAD, echo and background-fragment filters, a participant (speaker) filter, TTS lead trim, bounded end-of-turn prediction and a dead-inference watchdog.",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "files": ["src"],
+  "keywords": ["livekit", "livekit-agents", "voice-ai", "vad", "stt", "gemini", "echo", "barge-in", "turn-detection"],
+  "repository": { "type": "git", "url": "git+https://github.com/bounjee/turkish-voice-kit.git", "directory": "packages/livekit-voice-guards" },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "peerDependencies": {
+    "@livekit/agents": "^1.9.0",
+    "@livekit/rtc-node": ">=0.13.0",
+    "sherpa-onnx-node": "^1.13.0"
+  },
+  "peerDependenciesMeta": {
+    "sherpa-onnx-node": { "optional": true }
+  },
+  "devDependencies": {
+    "@livekit/agents": "1.9.0",
+    "@livekit/agents-plugin-cartesia": "1.9.0",
+    "@livekit/agents-plugin-livekit": "1.9.0",
+    "@livekit/agents-plugin-silero": "1.9.0",
+    "@livekit/rtc-node": "0.13.35"
+  }
+}

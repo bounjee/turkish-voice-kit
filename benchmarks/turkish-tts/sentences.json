@@ -1,0 +1,2154 @@
+{
+ "_": "Turkish voice-assistant TTS test set: 189 everyday sentences an assistant actually says, in 15 categories. Distribution and patterns follow 1,157 assistant sentences from 111 real calls (median 7 words; 38% questions, 21% brand names, 9% digits, 5% abbreviations); hard categories are deliberately over-represented. Fully synthetic: no real person, company or phone number. Categories were also drawn from other test sets: Freya-TR-Eval (plain everyday sentences, questions, exclamations), Gradium's hard-case set (abbreviations, alphanumerics, dates, numbers, e-mail and combined replies) and EmergentTTS-Eval (foreign words, questions, tone). text = what is sent to the TTS model (as an LLM writes it, with digits). spoken = the same sentence as it is read; it is both a second input (the model's own number reading is bypassed) and the scoring reference; when absent it equals text. alt = other accepted readings. entities = critical information scored separately (name: whole words, phone: digits, email: written form); a sentence is fully correct only if every entity is heard correctly.",
+ "items": [
+  {
+   "id": "gundelik-bakiyorum",
+   "category": "everyday",
+   "text": "Tabii, hemen bakıyorum."
+  },
+  {
+   "id": "gundelik-bekletecegim",
+   "category": "everyday",
+   "text": "Sizi biraz bekleteceğim, kusura bakmayın."
+  },
+  {
+   "id": "gundelik-ileteyim",
+   "category": "everyday",
+   "text": "Anladım, o zaman şöyle yapalım, ben talebinizi ekibe ileteyim."
+  },
+  {
+   "id": "gundelik-donerler",
+   "category": "everyday",
+   "text": "Şu an ekip arkadaşlarım müsait değil ama gün içinde size dönerler."
+  },
+  {
+   "id": "gundelik-not-aldim",
+   "category": "everyday",
+   "text": "Bunu şimdi not aldım, merak etmeyin."
+  },
+  {
+   "id": "gundelik-net-bilgi",
+   "category": "everyday",
+   "text": "Açıkçası bu konuda elimde net bir bilgi yok, yanlış yönlendirmek istemem."
+  },
+  {
+   "id": "gundelik-hallederiz",
+   "category": "everyday",
+   "text": "Güzel, o halde bilgilerinizi alayım, gerisini biz hallederiz."
+  },
+  {
+   "id": "gundelik-rica",
+   "category": "everyday",
+   "text": "Rica ederim, başka bir sorunuz olursa buradayım."
+  },
+  {
+   "id": "gundelik-olur",
+   "category": "everyday",
+   "text": "Olur tabii, nasıl isterseniz öyle yapalım."
+  },
+  {
+   "id": "gundelik-kisaca",
+   "category": "everyday",
+   "text": "Yani kısaca, önce ücretsiz deniyorsunuz, beğenirseniz devam ediyorsunuz."
+  },
+  {
+   "id": "gundelik-bastan",
+   "category": "everyday",
+   "text": "Haklısınız, bu biraz karışık görünüyor, baştan anlatayım."
+  },
+  {
+   "id": "gundelik-iyi-gunler",
+   "category": "everyday",
+   "text": "İyi günler dilerim, kendinize iyi bakın."
+  },
+  {
+   "id": "gundelik-gecmis-olsun",
+   "category": "everyday",
+   "text": "Geçmiş olsun, umarım bir an önce iyileşirsiniz."
+  },
+  {
+   "id": "gundelik-hayirli-olsun",
+   "category": "everyday",
+   "text": "Hayırlı olsun, güle güle kullanın!"
+  },
+  {
+   "id": "gundelik-kolay-gelsin",
+   "category": "everyday",
+   "text": "Kolay gelsin, iyi çalışmalar dilerim."
+  },
+  {
+   "id": "gundelik-oyle-mi",
+   "category": "everyday",
+   "text": "Aa, öyle mi? O zaman hemen düzeltelim."
+  },
+  {
+   "id": "gundelik-himm",
+   "category": "everyday",
+   "text": "Hımm, anladım, yani ürün elinize hasarlı ulaştı."
+  },
+  {
+   "id": "gundelik-yok-yok",
+   "category": "everyday",
+   "text": "Yok yok, hiç sorun değil, acele etmeyin."
+  },
+  {
+   "id": "gundelik-soyle-soyleyeyim",
+   "category": "everyday",
+   "text": "Şöyle söyleyeyim, bu fiyata bundan iyisini bulmak zor."
+  },
+  {
+   "id": "gundelik-uzuldum",
+   "category": "everyday",
+   "text": "Çok üzüldüm, böyle olmasını hiç istemezdik."
+  },
+  {
+   "id": "soru-yardim",
+   "category": "question",
+   "text": "Size nasıl yardımcı olabilirim?"
+  },
+  {
+   "id": "soru-sabah-ogleden",
+   "category": "question",
+   "text": "Randevuyu sabaha mı alalım, öğleden sonraya mı?"
+  },
+  {
+   "id": "soru-daha-once",
+   "category": "question",
+   "text": "Daha önce bizden hizmet almış mıydınız?"
+  },
+  {
+   "id": "soru-adiniz",
+   "category": "question",
+   "text": "Adınızı öğrenebilir miyim?"
+  },
+  {
+   "id": "soru-sube",
+   "category": "question",
+   "text": "Hangi şubemiz size daha yakın?"
+  },
+  {
+   "id": "soru-kac-kisi",
+   "category": "question",
+   "text": "Kaç kişi olacaksınız?"
+  },
+  {
+   "id": "soru-bu-numara",
+   "category": "question",
+   "text": "Size bu numaradan mı ulaşalım?"
+  },
+  {
+   "id": "soru-teslim",
+   "category": "question",
+   "text": "Peki, aracı nereden teslim almak istersiniz?"
+  },
+  {
+   "id": "soru-arasin",
+   "category": "question",
+   "text": "Ekibimizin sizi aramasını ister misiniz?"
+  },
+  {
+   "id": "soru-baska",
+   "category": "question",
+   "text": "Başka bir konuda yardımcı olabilir miyim?"
+  },
+  {
+   "id": "soru-sikayet",
+   "category": "question",
+   "text": "Şikâyetiniz ne zamandır devam ediyor?"
+  },
+  {
+   "id": "soru-hediye",
+   "category": "question",
+   "text": "Ürünü kendiniz için mi düşünüyorsunuz, hediye mi olacak?"
+  },
+  {
+   "id": "soru-butce",
+   "category": "question",
+   "text": "Bütçeniz aşağı yukarı ne kadar?"
+  },
+  {
+   "id": "soru-sesim",
+   "category": "question",
+   "text": "Sesim net geliyor mu?"
+  },
+  {
+   "id": "soru-hafta-ici",
+   "category": "question",
+   "text": "Hafta içi mi daha uygun olur, hafta sonu mu?"
+  },
+  {
+   "id": "soru-siparis",
+   "category": "question",
+   "text": "Siparişiniz elinize ulaştı mı?"
+  },
+  {
+   "id": "soru-hangi-konu",
+   "category": "question",
+   "text": "Tam olarak hangi konuda bilgi almak istemiştiniz?"
+  },
+  {
+   "id": "soru-kaydedeyim",
+   "category": "question",
+   "text": "Bunu sizin adınıza kaydedeyim mi?"
+  },
+  {
+   "id": "soru-degil-mi",
+   "category": "question",
+   "text": "Doğru mu anladım, iki kişilik oda istiyorsunuz, değil mi?"
+  },
+  {
+   "id": "soru-vazgecme",
+   "category": "question",
+   "text": "Neden vazgeçtiğinizi sorabilir miyim?"
+  },
+  {
+   "id": "kisa-evet",
+   "category": "short",
+   "text": "Evet."
+  },
+  {
+   "id": "kisa-hayir",
+   "category": "short",
+   "text": "Hayır."
+  },
+  {
+   "id": "kisa-anladim",
+   "category": "short",
+   "text": "Anladım."
+  },
+  {
+   "id": "kisa-tabii-ki",
+   "category": "short",
+   "text": "Tabii ki."
+  },
+  {
+   "id": "kisa-bir-saniye",
+   "category": "short",
+   "text": "Bir saniye."
+  },
+  {
+   "id": "kisa-tamamdir",
+   "category": "short",
+   "text": "Tamamdır."
+  },
+  {
+   "id": "kisa-buyurun",
+   "category": "short",
+   "text": "Buyurun."
+  },
+  {
+   "id": "kisa-maalesef",
+   "category": "short",
+   "text": "Maalesef."
+  },
+  {
+   "id": "kisa-harika",
+   "category": "short",
+   "text": "Harika!"
+  },
+  {
+   "id": "kisa-hemen",
+   "category": "short",
+   "text": "Hemen."
+  },
+  {
+   "id": "diyalog-karsilama",
+   "category": "dialogue",
+   "text": "Hoş geldiniz. Ben Selin, Yeşil Vadi Klinik için çalışan yapay zekâ asistanıyım. İsminizi öğrenebilir miyim?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Selin"
+    },
+    {
+     "type": "name",
+     "value": "Klinik"
+    }
+   ]
+  },
+  {
+   "id": "diyalog-memnun-oldum",
+   "category": "dialogue",
+   "text": "Memnun oldum Hasan Bey. Size nasıl yardımcı olabilirim, neyi merak ediyorsunuz?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Hasan"
+    }
+   ]
+  },
+  {
+   "id": "diyalog-duyuyor-musunuz",
+   "category": "dialogue",
+   "text": "Beni duyabiliyor musunuz?"
+  },
+  {
+   "id": "diyalog-tekrar",
+   "category": "dialogue",
+   "text": "Efendim, son söylediğinizi tam alamadım. Tekrar eder misiniz, sizi dinliyorum."
+  },
+  {
+   "id": "diyalog-bakiyorum",
+   "category": "dialogue",
+   "text": "Bir saniye, bakıyorum."
+  },
+  {
+   "id": "diyalog-hattan-ayrilmayin",
+   "category": "dialogue",
+   "text": "Hemen kontrol ediyorum, hattan ayrılmayın."
+  },
+  {
+   "id": "diyalog-dis-arama",
+   "category": "dialogue",
+   "text": "Merhaba, ben Selin, Yeşil Vadi Klinik adına arayan yapay zekâ asistanıyım. Görüşmemiz kaydediliyor.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Selin"
+    },
+    {
+     "type": "name",
+     "value": "kaydediliyor"
+    }
+   ]
+  },
+  {
+   "id": "diyalog-uygun-musunuz",
+   "category": "dialogue",
+   "text": "Şimdi konuşmak için uygun musunuz?"
+  },
+  {
+   "id": "diyalog-iletiyorum",
+   "category": "dialogue",
+   "text": "Talebinizi şimdi ekibimize iletiyorum, en kısa sürede size dönecekler."
+  },
+  {
+   "id": "diyalog-duyamiyorum",
+   "category": "dialogue",
+   "text": "Sizi duyamıyorum, görüşmeyi şimdilik sonlandırıyorum. İyi günler."
+  },
+  {
+   "id": "diyalog-kapanis",
+   "category": "dialogue",
+   "text": "Başka bir sorunuz yoksa görüşmeyi sonlandırıyorum, teşekkür ederim."
+  },
+  {
+   "id": "diyalog-duyamadim",
+   "category": "dialogue",
+   "text": "Kusura bakmayın, sizi tam duyamadım. Tekrar söyler misiniz?"
+  },
+  {
+   "id": "fiyat-muayene",
+   "category": "price",
+   "text": "Muayene ücretimiz 950 TL.",
+   "spoken": "Muayene ücretimiz dokuz yüz elli lira.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "950"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-paket",
+   "category": "price",
+   "text": "Başlangıç paketi aylık 1.490 TL, KDV dahil.",
+   "spoken": "Başlangıç paketi aylık bin dört yüz doksan lira, KDV dahil.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1490"
+    },
+    {
+     "type": "name",
+     "value": "KDV"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-kapora",
+   "category": "price",
+   "text": "Kapora olarak 2.500 TL alıyoruz, kalanını teslimatta ödüyorsunuz.",
+   "spoken": "Kapora olarak iki bin beş yüz lira alıyoruz, kalanını teslimatta ödüyorsunuz.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "2500"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-kiralama",
+   "category": "price",
+   "text": "Günlük kiralama 1.850 TL'den başlıyor.",
+   "spoken": "Günlük kiralama bin sekiz yüz elli liradan başlıyor.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1850"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-indirim",
+   "category": "price",
+   "text": "Bu ay %15 indirimle 3.400 TL yerine 2.890 TL.",
+   "spoken": "Bu ay yüzde on beş indirimle üç bin dört yüz lira yerine iki bin sekiz yüz doksan lira.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "15"
+    },
+    {
+     "type": "phone",
+     "value": "3400"
+    },
+    {
+     "type": "phone",
+     "value": "2890"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-kargo",
+   "category": "price",
+   "text": "Kargo 89,90 TL, 750 TL üzeri siparişlerde ücretsiz.",
+   "spoken": "Kargo seksen dokuz lira doksan kuruş, yedi yüz elli lira üzeri siparişlerde ücretsiz.",
+   "alt": [
+    "Kargo seksen dokuz doksan lira, yedi yüz elli lira üzeri siparişlerde ücretsiz."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "8990"
+    },
+    {
+     "type": "phone",
+     "value": "750"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-dolar",
+   "category": "price",
+   "text": "Fiyat 249 dolar, yani bugünkü kurla yaklaşık 10.500 TL.",
+   "spoken": "Fiyat iki yüz kırk dokuz dolar, yani bugünkü kurla yaklaşık on bin beş yüz lira.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "249"
+    },
+    {
+     "type": "phone",
+     "value": "10500"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-euro",
+   "category": "price",
+   "text": "Gecelik 120 €, kahvaltı dahil.",
+   "spoken": "Gecelik yüz yirmi euro, kahvaltı dahil.",
+   "alt": [
+    "Gecelik yüz yirmi avro, kahvaltı dahil."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "120"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-taksit",
+   "category": "price",
+   "text": "12 taksit yaparsak ayda 1.125 TL düşüyor.",
+   "spoken": "On iki taksit yaparsak ayda bin yüz yirmi beş lira düşüyor.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "12"
+    },
+    {
+     "type": "phone",
+     "value": "1125"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-yillik",
+   "category": "price",
+   "text": "Yıllık alırsanız 17.880 TL yerine 14.900 TL ödüyorsunuz.",
+   "spoken": "Yıllık alırsanız on yedi bin sekiz yüz seksen lira yerine on dört bin dokuz yüz lira ödüyorsunuz.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "17880"
+    },
+    {
+     "type": "phone",
+     "value": "14900"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-daire",
+   "category": "price",
+   "text": "Daire 4.250.000 TL, pazarlık payı var.",
+   "spoken": "Daire dört milyon iki yüz elli bin lira, pazarlık payı var.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "4250000"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-dakika",
+   "category": "price",
+   "text": "Dakikası 3,5 TL, ilk 100 dakika pakete dahil.",
+   "spoken": "Dakikası üç buçuk lira, ilk yüz dakika pakete dahil.",
+   "alt": [
+    "Dakikası üç virgül beş lira, ilk yüz dakika pakete dahil.",
+    "Dakikası üç lira elli kuruş, ilk yüz dakika pakete dahil."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "100"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-hediye-ceki",
+   "category": "price",
+   "text": "1.000 TL'lik hediye çeki tanımladım.",
+   "spoken": "Bin liralık hediye çeki tanımladım.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1000"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-uc-paket",
+   "category": "price",
+   "text": "Başlangıç 3.500 TL, Profesyonel 7.500 TL, Kurumsal 15.000 TL; fiyatlara KDV dahil değil.",
+   "spoken": "Başlangıç üç bin beş yüz lira, Profesyonel yedi bin beş yüz lira, Kurumsal on beş bin lira; fiyatlara KDV dahil değil.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "3500"
+    },
+    {
+     "type": "phone",
+     "value": "7500"
+    },
+    {
+     "type": "phone",
+     "value": "15000"
+    },
+    {
+     "type": "name",
+     "value": "KDV"
+    }
+   ]
+  },
+  {
+   "id": "fiyat-simge-once",
+   "category": "price",
+   "text": "Aylık ₺2.750, yıllık ödemede ₺27.500.",
+   "spoken": "Aylık iki bin yedi yüz elli lira, yıllık ödemede yirmi yedi bin beş yüz lira.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "2750"
+    },
+    {
+     "type": "phone",
+     "value": "27500"
+    }
+   ]
+  },
+  {
+   "id": "telefon-cep",
+   "category": "phone",
+   "text": "Numaranızı 0532 412 33 08 olarak aldım, doğru mu?",
+   "spoken": "Numaranızı sıfır beş yüz otuz iki, dört yüz on iki, otuz üç, sıfır sekiz olarak aldım, doğru mu?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "05324123308"
+    }
+   ]
+  },
+  {
+   "id": "telefon-0850",
+   "category": "phone",
+   "text": "Bize 0850 305 12 40 numaralı hattan ulaşabilirsiniz.",
+   "spoken": "Bize sıfır sekiz yüz elli, üç yüz beş, on iki, kırk numaralı hattan ulaşabilirsiniz.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "08503051240"
+    }
+   ]
+  },
+  {
+   "id": "telefon-sabit",
+   "category": "phone",
+   "text": "Sizi 0212 555 01 67'den arayacağız.",
+   "spoken": "Sizi sıfır iki yüz on iki, beş yüz elli beş, sıfır bir, altmış yediden arayacağız.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "02125550167"
+    }
+   ]
+  },
+  {
+   "id": "telefon-sonu",
+   "category": "phone",
+   "text": "Sonu 44 08 ile biten numara mı?",
+   "spoken": "Sonu kırk dört, sıfır sekiz ile biten numara mı?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "4408"
+    }
+   ]
+  },
+  {
+   "id": "telefon-arti-doksan",
+   "category": "phone",
+   "text": "+90 544 210 76 93, bu numara WhatsApp'ta da açık mı?",
+   "spoken": "Artı doksan, beş yüz kırk dört, iki yüz on, yetmiş altı, doksan üç, bu numara WhatsApp'ta da açık mı?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "905442107693"
+    }
+   ]
+  },
+  {
+   "id": "telefon-kimlik-son-dort",
+   "category": "phone",
+   "text": "Kimlik numaranızın son dört hanesi 3 6 1 8, değil mi?",
+   "spoken": "Kimlik numaranızın son dört hanesi üç, altı, bir, sekiz, değil mi?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "3618"
+    }
+   ]
+  },
+  {
+   "id": "telefon-dahili",
+   "category": "phone",
+   "text": "Dahili numaram 118, santralden bağlanabilirsiniz.",
+   "spoken": "Dahili numaram yüz on sekiz, santralden bağlanabilirsiniz.",
+   "alt": [
+    "Dahili numaram bir bir sekiz, santralden bağlanabilirsiniz."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "118"
+    }
+   ]
+  },
+  {
+   "id": "telefon-siparis-no",
+   "category": "phone",
+   "text": "Sipariş numaranız 48 27 16, not edebildiniz mi?",
+   "spoken": "Sipariş numaranız kırk sekiz, yirmi yedi, on altı, not edebildiniz mi?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "482716"
+    }
+   ]
+  },
+  {
+   "id": "telefon-kod",
+   "category": "phone",
+   "text": "Rezervasyon kodunuz 7 4 0 9 2.",
+   "spoken": "Rezervasyon kodunuz yedi, dört, sıfır, dokuz, iki.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "74092"
+    }
+   ]
+  },
+  {
+   "id": "telefon-guncelle",
+   "category": "phone",
+   "text": "Kayıtlı numaranız 0505 660 19 02, bunu güncelleyelim mi?",
+   "spoken": "Kayıtlı numaranız sıfır beş yüz beş, altı yüz altmış, on dokuz, sıfır iki, bunu güncelleyelim mi?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "05056601902"
+    }
+   ]
+  },
+  {
+   "id": "tarih-randevu",
+   "category": "date-time",
+   "text": "Randevunuz 24 Ekim Cumartesi, saat 14.30'da.",
+   "spoken": "Randevunuz yirmi dört Ekim Cumartesi, saat on dört otuzda.",
+   "alt": [
+    "Randevunuz yirmi dört Ekim Cumartesi, saat on dört buçukta."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "24"
+    },
+    {
+     "type": "name",
+     "value": "Ekim"
+    },
+    {
+     "type": "name",
+     "value": "Cumartesi"
+    }
+   ]
+  },
+  {
+   "id": "tarih-yarin-sabah",
+   "category": "date-time",
+   "text": "Yarın sabah 09.00'da sizi bekliyoruz.",
+   "spoken": "Yarın sabah dokuzda sizi bekliyoruz.",
+   "alt": [
+    "Yarın sabah saat dokuzda sizi bekliyoruz."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "9"
+    },
+    {
+     "type": "name",
+     "value": "yarın"
+    }
+   ]
+  },
+  {
+   "id": "tarih-calisma-saati",
+   "category": "date-time",
+   "text": "Hafta içi 08.30 ile 18.00 arasında açığız.",
+   "spoken": "Hafta içi sekiz buçuk ile on sekiz arasında açığız.",
+   "alt": [
+    "Hafta içi sekiz otuz ile on sekiz arasında açığız."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "18"
+    }
+   ]
+  },
+  {
+   "id": "tarih-is-gunu",
+   "category": "date-time",
+   "text": "Teslimat 3-5 iş günü içinde yapılıyor.",
+   "spoken": "Teslimat üç ila beş iş günü içinde yapılıyor.",
+   "alt": [
+    "Teslimat üç beş iş günü içinde yapılıyor."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "3"
+    },
+    {
+     "type": "phone",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "id": "tarih-kampanya",
+   "category": "date-time",
+   "text": "Kampanya 31 Aralık'a kadar geçerli.",
+   "spoken": "Kampanya otuz bir Aralık'a kadar geçerli.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "31"
+    },
+    {
+     "type": "name",
+     "value": "Aralık'a"
+    }
+   ]
+  },
+  {
+   "id": "tarih-noktali",
+   "category": "date-time",
+   "text": "Siparişiniz 15.10.2026 tarihinde kargoya verildi.",
+   "spoken": "Siparişiniz on beş Ekim iki bin yirmi altı tarihinde kargoya verildi.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "15"
+    },
+    {
+     "type": "phone",
+     "value": "2026"
+    }
+   ]
+  },
+  {
+   "id": "tarih-ucak",
+   "category": "date-time",
+   "text": "Uçağınız 06.45'te kalkıyor, servis 04.15'te alacak.",
+   "spoken": "Uçağınız altı kırk beşte kalkıyor, servis dört on beşte alacak.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "645"
+    },
+    {
+     "type": "phone",
+     "value": "415"
+    }
+   ]
+  },
+  {
+   "id": "tarih-bir-kasim",
+   "category": "date-time",
+   "text": "1 Kasım'dan itibaren yeni fiyatlar geçerli olacak.",
+   "spoken": "Bir Kasım'dan itibaren yeni fiyatlar geçerli olacak.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1"
+    },
+    {
+     "type": "name",
+     "value": "Kasım'dan"
+    }
+   ]
+  },
+  {
+   "id": "tarih-garanti",
+   "category": "date-time",
+   "text": "Garanti süresi 2 yıl, yani 2028'e kadar.",
+   "spoken": "Garanti süresi iki yıl, yani iki bin yirmi sekize kadar.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "2028"
+    }
+   ]
+  },
+  {
+   "id": "tarih-on-dakika",
+   "category": "date-time",
+   "text": "Sizi 10 dakika içinde arayacaklar.",
+   "spoken": "Sizi on dakika içinde arayacaklar.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "id": "tarih-bayram",
+   "category": "date-time",
+   "text": "29 Ekim'de kapalıyız, 30'unda normal açığız.",
+   "spoken": "Yirmi dokuz Ekim'de kapalıyız, otuzunda normal açığız.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "29"
+    },
+    {
+     "type": "name",
+     "value": "Ekim'de"
+    }
+   ]
+  },
+  {
+   "id": "tarih-on-yediden-sonra",
+   "category": "date-time",
+   "text": "Saat 17.00'den sonra gelen siparişler ertesi gün çıkıyor.",
+   "spoken": "Saat on yediden sonra gelen siparişler ertesi gün çıkıyor.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "17"
+    }
+   ]
+  },
+  {
+   "id": "tarih-giris-cikis",
+   "category": "date-time",
+   "text": "Giriş saati 14:00, çıkış 12:00.",
+   "spoken": "Giriş saati on dört, çıkış on iki.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "14"
+    },
+    {
+     "type": "phone",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "id": "tarih-kurs",
+   "category": "date-time",
+   "text": "Kurs 3 ay sürüyor, haftada 2 gün, 19:00-21:00 arası.",
+   "spoken": "Kurs üç ay sürüyor, haftada iki gün, on dokuz ile yirmi bir arası.",
+   "alt": [
+    "Kurs üç ay sürüyor, haftada iki gün, on dokuz yirmi bir arası."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "19"
+    },
+    {
+     "type": "phone",
+     "value": "21"
+    }
+   ]
+  },
+  {
+   "id": "tarih-en-yakin",
+   "category": "date-time",
+   "text": "En yakın boşluk 6 Kasım Cuma, saat 16:15.",
+   "spoken": "En yakın boşluk altı Kasım Cuma, saat on altı on beş.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1615"
+    },
+    {
+     "type": "name",
+     "value": "Kasım"
+    },
+    {
+     "type": "name",
+     "value": "Cuma"
+    }
+   ]
+  },
+  {
+   "id": "alfa-plaka",
+   "category": "alphanumeric",
+   "text": "Aracın plakası 34 ABC 123, doğru mu?",
+   "spoken": "Aracın plakası otuz dört ABC yüz yirmi üç, doğru mu?",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "34"
+    },
+    {
+     "type": "phone",
+     "value": "123"
+    },
+    {
+     "type": "name",
+     "value": "ABC"
+    }
+   ]
+  },
+  {
+   "id": "alfa-siparis-kodu",
+   "category": "alphanumeric",
+   "text": "Sipariş kodunuz TR-4827.",
+   "spoken": "Sipariş kodunuz TR dört sekiz iki yedi.",
+   "alt": [
+    "Sipariş kodunuz TR kırk sekiz yirmi yedi."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "4827"
+    },
+    {
+     "type": "name",
+     "value": "TR"
+    }
+   ]
+  },
+  {
+   "id": "alfa-iban",
+   "category": "alphanumeric",
+   "text": "IBAN TR12 ile başlıyor, 5601 ile bitiyor.",
+   "spoken": "IBAN TR on iki ile başlıyor, elli altı sıfır bir ile bitiyor.",
+   "alt": [
+    "IBAN TR on iki ile başlıyor, beş bin altı yüz bir ile bitiyor."
+   ],
+   "entities": [
+    {
+     "type": "name",
+     "value": "IBAN"
+    },
+    {
+     "type": "phone",
+     "value": "12"
+    },
+    {
+     "type": "phone",
+     "value": "5601"
+    }
+   ]
+  },
+  {
+   "id": "alfa-yedi-yirmidort",
+   "category": "alphanumeric",
+   "text": "7/24 hizmet veriyoruz.",
+   "spoken": "Yedi yirmi dört hizmet veriyoruz.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "724"
+    }
+   ]
+  },
+  {
+   "id": "alfa-a4",
+   "category": "alphanumeric",
+   "text": "Broşürler A4 boyutunda, 250 gram kuşe kâğıda basılıyor.",
+   "spoken": "Broşürler A dört boyutunda, iki yüz elli gram kuşe kâğıda basılıyor.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "250"
+    }
+   ]
+  },
+  {
+   "id": "alfa-ucus",
+   "category": "alphanumeric",
+   "text": "Uçuş numaranız TK 2146, kapı B12.",
+   "spoken": "Uçuş numaranız TK yirmi bir kırk altı, kapı B on iki.",
+   "alt": [
+    "Uçuş numaranız TK iki bir dört altı, kapı B on iki."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "2146"
+    },
+    {
+     "type": "phone",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "id": "alfa-model",
+   "category": "alphanumeric",
+   "text": "Modelimiz iPhone 15 Pro, 256 GB hafızalı.",
+   "spoken": "Modelimiz iPhone on beş Pro, iki yüz elli altı GB hafızalı.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "iPhone"
+    },
+    {
+     "type": "phone",
+     "value": "15"
+    },
+    {
+     "type": "phone",
+     "value": "256"
+    }
+   ]
+  },
+  {
+   "id": "alfa-oda",
+   "category": "alphanumeric",
+   "text": "Oda numaranız 304, 3. katta.",
+   "spoken": "Oda numaranız üç yüz dört, üçüncü katta.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "304"
+    }
+   ]
+  },
+  {
+   "id": "alfa-sira",
+   "category": "alphanumeric",
+   "text": "Sıra numaranız A 47, gişe 3'e geçebilirsiniz.",
+   "spoken": "Sıra numaranız A kırk yedi, gişe üçe geçebilirsiniz.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "47"
+    }
+   ]
+  },
+  {
+   "id": "alfa-kampanya-kodu",
+   "category": "alphanumeric",
+   "text": "Kampanya kodu YAZ25, sepette yazmanız yeterli.",
+   "spoken": "Kampanya kodu YAZ yirmi beş, sepette yazmanız yeterli.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "YAZ"
+    },
+    {
+     "type": "phone",
+     "value": "25"
+    }
+   ]
+  },
+  {
+   "id": "marka-whatsapp",
+   "category": "brand",
+   "text": "İsterseniz WhatsApp'tan da yazabilirsiniz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "WhatsApp'tan"
+    }
+   ]
+  },
+  {
+   "id": "marka-instagram",
+   "category": "brand",
+   "text": "Instagram'daki mesajınızı gördük.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Instagram'daki"
+    }
+   ]
+  },
+  {
+   "id": "marka-maps",
+   "category": "brand",
+   "text": "Konumu Google Maps'ten gönderiyorum.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Google"
+    },
+    {
+     "type": "name",
+     "value": "Maps'ten"
+    }
+   ]
+  },
+  {
+   "id": "marka-iyzico",
+   "category": "brand",
+   "text": "Ödemeyi iyzico üzerinden güvenle yapabilirsiniz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "iyzico"
+    }
+   ]
+  },
+  {
+   "id": "marka-zoom-meet",
+   "category": "brand",
+   "text": "Toplantı bağlantısını Zoom'dan mı, Google Meet'ten mi istersiniz?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Zoom'dan"
+    },
+    {
+     "type": "name",
+     "value": "Meet'ten"
+    }
+   ]
+  },
+  {
+   "id": "marka-magaza",
+   "category": "brand",
+   "text": "Uygulamamızı App Store'dan ya da Google Play'den indirebilirsiniz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "App"
+    },
+    {
+     "type": "name",
+     "value": "Store'dan"
+    },
+    {
+     "type": "name",
+     "value": "Play'den"
+    }
+   ]
+  },
+  {
+   "id": "marka-pazaryeri",
+   "category": "brand",
+   "text": "Siparişinizi Trendyol'dan mı vermiştiniz, Hepsiburada'dan mı?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Trendyol'dan"
+    },
+    {
+     "type": "name",
+     "value": "Hepsiburada'dan"
+    }
+   ]
+  },
+  {
+   "id": "marka-wifi",
+   "category": "brand",
+   "text": "Wi-Fi şifresini resepsiyondan alabilirsiniz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Wi-Fi"
+    }
+   ]
+  },
+  {
+   "id": "marka-iphone-qr",
+   "category": "brand",
+   "text": "iPhone'unuzla QR kodu okutmanız yeterli.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "iPhone'unuzla"
+    },
+    {
+     "type": "name",
+     "value": "QR"
+    }
+   ]
+  },
+  {
+   "id": "marka-pdf",
+   "category": "brand",
+   "text": "Faturanızı e-postanıza PDF olarak gönderdim.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "PDF"
+    }
+   ]
+  },
+  {
+   "id": "marka-checkin",
+   "category": "brand",
+   "text": "Check-in işlemini online yapabilirsiniz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Check-in"
+    },
+    {
+     "type": "name",
+     "value": "online"
+    }
+   ]
+  },
+  {
+   "id": "marka-bluetooth",
+   "category": "brand",
+   "text": "Aracımızda Bluetooth ve CarPlay var.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Bluetooth"
+    },
+    {
+     "type": "name",
+     "value": "CarPlay"
+    }
+   ]
+  },
+  {
+   "id": "marka-messenger",
+   "category": "brand",
+   "text": "Facebook Messenger'dan gelen mesajları da ben yanıtlıyorum.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Facebook"
+    },
+    {
+     "type": "name",
+     "value": "Messenger'dan"
+    }
+   ]
+  },
+  {
+   "id": "marka-paket-adlari",
+   "category": "brand",
+   "text": "Starter, Professional ve Business olmak üzere üç paketimiz var.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Starter"
+    },
+    {
+     "type": "name",
+     "value": "Professional"
+    },
+    {
+     "type": "name",
+     "value": "Business"
+    }
+   ]
+  },
+  {
+   "id": "marka-crm-pms",
+   "category": "brand",
+   "text": "Mevcut CRM ve PMS sisteminize bağlanabiliyoruz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "CRM"
+    },
+    {
+     "type": "name",
+     "value": "PMS"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-kdv",
+   "category": "abbreviation",
+   "text": "Fiyatlara KDV dahil değil.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "KDV"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-sgk",
+   "category": "abbreviation",
+   "text": "SGK anlaşmamız var, muayene ücretsiz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "SGK"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-iban-sms",
+   "category": "abbreviation",
+   "text": "IBAN numaramızı SMS ile gönderiyorum.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "IBAN"
+    },
+    {
+     "type": "name",
+     "value": "SMS"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-tc",
+   "category": "abbreviation",
+   "text": "T.C. kimlik numaranızı rica edebilir miyim?",
+   "spoken": "TC kimlik numaranızı rica edebilir miyim?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "TC"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-otv-mtv",
+   "category": "abbreviation",
+   "text": "ÖTV ve MTV fiyata dahil.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "ÖTV"
+    },
+    {
+     "type": "name",
+     "value": "MTV"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-dr",
+   "category": "abbreviation",
+   "text": "Dr. Aylin Hanım salı günleri hastanede.",
+   "spoken": "Doktor Aylin Hanım salı günleri hastanede.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Doktor"
+    },
+    {
+     "type": "name",
+     "value": "Aylin"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-prof-dr",
+   "category": "abbreviation",
+   "text": "Prof. Dr. Kemal Bey'in ilk boş günü perşembe.",
+   "spoken": "Profesör Doktor Kemal Bey'in ilk boş günü perşembe.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Profesör"
+    },
+    {
+     "type": "name",
+     "value": "Doktor"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-mr-ekg",
+   "category": "abbreviation",
+   "text": "MR ve EKG çekimi aynı gün yapılıyor.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "MR"
+    },
+    {
+     "type": "name",
+     "value": "EKG"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-kvkk",
+   "category": "abbreviation",
+   "text": "KVKK kapsamında onayınızı almam gerekiyor.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "KVKK"
+    }
+   ]
+  },
+  {
+   "id": "kisaltma-ce-tse",
+   "category": "abbreviation",
+   "text": "Ürün CE ve TSE belgeli.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "CE"
+    },
+    {
+     "type": "name",
+     "value": "TSE"
+    }
+   ]
+  },
+  {
+   "id": "isim-ertugrul",
+   "category": "proper-name",
+   "text": "Ertuğrul Bey, talebinizi aldım.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Ertuğrul"
+    }
+   ]
+  },
+  {
+   "id": "isim-gulsah",
+   "category": "proper-name",
+   "text": "Sizi Gülşah Hanım arayacak.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Gülşah"
+    }
+   ]
+  },
+  {
+   "id": "isim-cagri",
+   "category": "proper-name",
+   "text": "Çağrı Öztürk adına bir kayıt görüyorum.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Çağrı"
+    },
+    {
+     "type": "name",
+     "value": "Öztürk"
+    }
+   ]
+  },
+  {
+   "id": "isim-kadikoy",
+   "category": "proper-name",
+   "text": "Şubemiz Kadıköy'de, Caferağa Mahallesi'nde.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Kadıköy'de"
+    },
+    {
+     "type": "name",
+     "value": "Caferağa"
+    }
+   ]
+  },
+  {
+   "id": "isim-adres",
+   "category": "proper-name",
+   "text": "Adresimiz Atatürk Cad. No: 12, Kat: 3, Çankaya.",
+   "spoken": "Adresimiz Atatürk Caddesi numara on iki, kat üç, Çankaya.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Çankaya"
+    },
+    {
+     "type": "phone",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "id": "isim-igdir",
+   "category": "proper-name",
+   "text": "Iğdır, Ağrı ve Muğla'ya da gönderim yapıyoruz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Iğdır"
+    },
+    {
+     "type": "name",
+     "value": "Ağrı"
+    },
+    {
+     "type": "name",
+     "value": "Muğla'ya"
+    }
+   ]
+  },
+  {
+   "id": "isim-uskudar",
+   "category": "proper-name",
+   "text": "Üsküdar'dan Beşiktaş'a vapurla on beş dakika.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Üsküdar'dan"
+    },
+    {
+     "type": "name",
+     "value": "Beşiktaş'a"
+    }
+   ]
+  },
+  {
+   "id": "isim-muge",
+   "category": "proper-name",
+   "text": "Müge Hanım şu an Şişli şubesinde.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Müge"
+    },
+    {
+     "type": "name",
+     "value": "Şişli"
+    }
+   ]
+  },
+  {
+   "id": "isim-oguzhan",
+   "category": "proper-name",
+   "text": "Oğuzhan Bey'in kaydını Yiğit Bey'e devrettim.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Oğuzhan"
+    },
+    {
+     "type": "name",
+     "value": "Yiğit"
+    }
+   ]
+  },
+  {
+   "id": "isim-oludeniz",
+   "category": "proper-name",
+   "text": "Otelimiz Ölüdeniz'e yürüme mesafesinde.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Ölüdeniz'e"
+    }
+   ]
+  },
+  {
+   "id": "isim-maras-urfa",
+   "category": "proper-name",
+   "text": "Kahramanmaraş ve Şanlıurfa şubelerimiz pazar günü kapalı.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Kahramanmaraş"
+    },
+    {
+     "type": "name",
+     "value": "Şanlıurfa"
+    }
+   ]
+  },
+  {
+   "id": "isim-mahalle",
+   "category": "proper-name",
+   "text": "Kayıtlı adresiniz Çınar Mah. Lale Sok. No: 8 Daire: 5; teslimat bu adrese mi?",
+   "spoken": "Kayıtlı adresiniz Çınar Mahallesi Lale Sokak numara sekiz daire beş; teslimat bu adrese mi?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Sokak"
+    },
+    {
+     "type": "phone",
+     "value": "8"
+    },
+    {
+     "type": "phone",
+     "value": "5"
+    }
+   ]
+  },
+  {
+   "id": "eposta-destek",
+   "category": "email-web",
+   "text": "Bilgileri destek@ornekfirma.com adresine gönderebilirsiniz.",
+   "spoken": "Bilgileri destek et ornekfirma nokta com adresine gönderebilirsiniz.",
+   "entities": [
+    {
+     "type": "email",
+     "value": "destek@ornekfirma.com"
+    }
+   ]
+  },
+  {
+   "id": "eposta-site",
+   "category": "email-web",
+   "text": "Web sitemiz www.ornekotel.com.tr.",
+   "spoken": "Web sitemiz www nokta ornekotel nokta com nokta tr.",
+   "entities": [
+    {
+     "type": "email",
+     "value": "ornekotel.com.tr"
+    }
+   ]
+  },
+  {
+   "id": "eposta-gmail",
+   "category": "email-web",
+   "text": "E-posta adresinizi a.yilmaz@gmail.com olarak aldım, doğru mu?",
+   "spoken": "E-posta adresinizi a nokta yilmaz et gmail nokta com olarak aldım, doğru mu?",
+   "entities": [
+    {
+     "type": "email",
+     "value": "a.yilmaz@gmail.com"
+    }
+   ]
+  },
+  {
+   "id": "eposta-link",
+   "category": "email-web",
+   "text": "Bağlantı ornekklinik.com/randevu, mesaj olarak da gönderdim.",
+   "spoken": "Bağlantı ornekklinik nokta com bölü randevu, mesaj olarak da gönderdim.",
+   "alt": [
+    "Bağlantı ornekklinik nokta com eğik çizgi randevu, mesaj olarak da gönderdim."
+   ],
+   "entities": [
+    {
+     "type": "email",
+     "value": "ornekklinik.com"
+    }
+   ]
+  },
+  {
+   "id": "eposta-heceleme",
+   "category": "email-web",
+   "text": "Harf harf söylüyorum: K, A, R, A, V, A, N.",
+   "spoken": "Harf harf söylüyorum: ka, a, re, a, ve, a, ne."
+  },
+  {
+   "id": "eposta-kullanici-adi",
+   "category": "email-web",
+   "text": "Kullanıcı adınız mert_1987.",
+   "spoken": "Kullanıcı adınız mert alt çizgi bin dokuz yüz seksen yedi.",
+   "alt": [
+    "Kullanıcı adınız mert alt tire bin dokuz yüz seksen yedi.",
+    "Kullanıcı adınız mert alt çizgi bir dokuz sekiz yedi."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1987"
+    }
+   ]
+  },
+  {
+   "id": "eposta-info",
+   "category": "email-web",
+   "text": "info@ornekfirma.com'a yazarsanız aynı gün dönüyoruz.",
+   "spoken": "info et ornekfirma nokta com'a yazarsanız aynı gün dönüyoruz.",
+   "entities": [
+    {
+     "type": "email",
+     "value": "info@ornekfirma.com"
+    }
+   ]
+  },
+  {
+   "id": "eposta-panel",
+   "category": "email-web",
+   "text": "Şifrenizi sıfırlamak için panel.ornekfirma.com.tr adresine girin.",
+   "spoken": "Şifrenizi sıfırlamak için panel nokta ornekfirma nokta com nokta tr adresine girin.",
+   "entities": [
+    {
+     "type": "email",
+     "value": "panel.ornekfirma.com.tr"
+    }
+   ]
+  },
+  {
+   "id": "olcu-daire",
+   "category": "unit-percent",
+   "text": "Daire 3+1, 145 m² ve 2. katta.",
+   "spoken": "Daire üç artı bir, yüz kırk beş metrekare ve ikinci katta.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "145"
+    },
+    {
+     "type": "name",
+     "value": "metrekare"
+    }
+   ]
+  },
+  {
+   "id": "olcu-yakit",
+   "category": "unit-percent",
+   "text": "Araç 100 km'de 5,8 litre yakıyor.",
+   "spoken": "Araç yüz kilometrede beş virgül sekiz litre yakıyor.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "100"
+    },
+    {
+     "type": "name",
+     "value": "litre"
+    }
+   ]
+  },
+  {
+   "id": "olcu-yuzde-yirmi",
+   "category": "unit-percent",
+   "text": "Stoklarda %20 indirim var.",
+   "spoken": "Stoklarda yüzde yirmi indirim var.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "20"
+    }
+   ]
+  },
+  {
+   "id": "olcu-kilo",
+   "category": "unit-percent",
+   "text": "Paket 2,5 kg, kargo ücreti buna göre hesaplanıyor.",
+   "spoken": "Paket iki buçuk kilo, kargo ücreti buna göre hesaplanıyor.",
+   "alt": [
+    "Paket iki virgül beş kilogram, kargo ücreti buna göre hesaplanıyor.",
+    "Paket iki buçuk kilogram, kargo ücreti buna göre hesaplanıyor."
+   ]
+  },
+  {
+   "id": "olcu-derece",
+   "category": "unit-percent",
+   "text": "Oda sıcaklığı 22 °C'de sabit tutuluyor.",
+   "spoken": "Oda sıcaklığı yirmi iki derecede sabit tutuluyor.",
+   "alt": [
+    "Oda sıcaklığı yirmi iki santigrat derecede sabit tutuluyor."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "22"
+    }
+   ]
+  },
+  {
+   "id": "olcu-tabela",
+   "category": "unit-percent",
+   "text": "Tabela 60x90 cm ölçüsünde basılıyor.",
+   "spoken": "Tabela altmışa doksan santim ölçüsünde basılıyor.",
+   "alt": [
+    "Tabela altmış çarpı doksan santimetre ölçüsünde basılıyor."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "60"
+    },
+    {
+     "type": "phone",
+     "value": "90"
+    }
+   ]
+  },
+  {
+   "id": "olcu-memnuniyet",
+   "category": "unit-percent",
+   "text": "Memnuniyet oranımız %98,5.",
+   "spoken": "Memnuniyet oranımız yüzde doksan sekiz virgül beş.",
+   "alt": [
+    "Memnuniyet oranımız yüzde doksan sekiz buçuk."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "98"
+    }
+   ]
+  },
+  {
+   "id": "olcu-mesafe",
+   "category": "unit-percent",
+   "text": "Otel denize 350 m, merkeze 2 km.",
+   "spoken": "Otel denize üç yüz elli metre, merkeze iki kilometre.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "350"
+    },
+    {
+     "type": "name",
+     "value": "kilometre"
+    }
+   ]
+  },
+  {
+   "id": "olcu-ucte-bir",
+   "category": "unit-percent",
+   "text": "Ücretin 3'te 1'i peşin, kalanı teslimde.",
+   "spoken": "Ücretin üçte biri peşin, kalanı teslimde."
+  },
+  {
+   "id": "olcu-kartvizit",
+   "category": "unit-percent",
+   "text": "1.000 adet kartvizit 2 iş gününde hazır olur.",
+   "spoken": "Bin adet kartvizit iki iş gününde hazır olur.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "1000"
+    }
+   ]
+  },
+  {
+   "id": "tuzak-hala",
+   "category": "trap",
+   "text": "Hâlâ bekliyorsanız hemen yardımcı olayım."
+  },
+  {
+   "id": "tuzak-kar",
+   "category": "trap",
+   "text": "Kâr amacı gütmeyen kuruluşlara indirimimiz var."
+  },
+  {
+   "id": "tuzak-yagmur",
+   "category": "trap",
+   "text": "Yağmur yağdığı için öğleden sonraki turu erteledik."
+  },
+  {
+   "id": "tuzak-gerceklestirme",
+   "category": "trap",
+   "text": "Randevunuzu gerçekleştiremediğimiz için özür dileriz."
+  },
+  {
+   "id": "tuzak-degerlendirme",
+   "category": "trap",
+   "text": "Değerlendirmenizi önemsiyoruz, görüşlerinizi paylaşırsanız seviniriz."
+  },
+  {
+   "id": "tuzak-geri-bildirim",
+   "category": "trap",
+   "text": "Müşterilerimizden aldığımız geri bildirimlere göre güncelliyoruz."
+  },
+  {
+   "id": "tuzak-agri",
+   "category": "trap",
+   "text": "Ağrınız geçmediyse doktorumuzla görüşmenizi öneririm."
+  },
+  {
+   "id": "tuzak-kagit",
+   "category": "trap",
+   "text": "Kâğıt değil, karton üzerine basıyoruz; açık ve koyu renk seçeneği var."
+  },
+  {
+   "id": "tuzak-ruzgar",
+   "category": "trap",
+   "text": "Rüzgârlı havalarda tekne turu yapılmıyor."
+  },
+  {
+   "id": "tuzak-ogrenci",
+   "category": "trap",
+   "text": "Öğrencilerimizin çoğu üçüncü ayda akıcı konuşmaya başlıyor."
+  },
+  {
+   "id": "birlesik-randevu-ozeti",
+   "category": "combined",
+   "text": "Talebinizin özeti: Elif Hanım adına 24 Ekim Cumartesi saat 14:30'a diş muayenesi. Onaylıyor musunuz?",
+   "spoken": "Talebinizin özeti: Elif Hanım adına yirmi dört Ekim Cumartesi saat on dört otuza diş muayenesi. Onaylıyor musunuz?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Elif"
+    },
+    {
+     "type": "phone",
+     "value": "24"
+    },
+    {
+     "type": "name",
+     "value": "Ekim"
+    },
+    {
+     "type": "name",
+     "value": "Cumartesi"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-siparis",
+   "category": "combined",
+   "text": "Siparişinizi aldım: 2 adet 19 litrelik damacana, toplam 180 TL. Yarın 10:00 ile 12:00 arasında teslim edilecek.",
+   "spoken": "Siparişinizi aldım: iki adet on dokuz litrelik damacana, toplam yüz seksen lira. Yarın on ile on iki arasında teslim edilecek.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "19"
+    },
+    {
+     "type": "phone",
+     "value": "180"
+    },
+    {
+     "type": "phone",
+     "value": "12"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-hatirlatma",
+   "category": "combined",
+   "text": "Merhaba Ayşe Hanım, 28 Ekim Çarşamba saat 11:00'deki randevunuzu hatırlatmak için arıyorum. Gelebilecek misiniz?",
+   "spoken": "Merhaba Ayşe Hanım, yirmi sekiz Ekim Çarşamba saat on birdeki randevunuzu hatırlatmak için arıyorum. Gelebilecek misiniz?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Ayşe"
+    },
+    {
+     "type": "phone",
+     "value": "28"
+    },
+    {
+     "type": "name",
+     "value": "Ekim"
+    },
+    {
+     "type": "name",
+     "value": "Çarşamba"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-oda-fiyati",
+   "category": "combined",
+   "text": "Tek kişilik oda gecelik 2.400 TL, çift kişilik 3.200 TL; kahvaltı dahil. 3 gece kalırsanız %10 indirim uyguluyoruz.",
+   "spoken": "Tek kişilik oda gecelik iki bin dört yüz lira, çift kişilik üç bin iki yüz lira; kahvaltı dahil. Üç gece kalırsanız yüzde on indirim uyguluyoruz.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "2400"
+    },
+    {
+     "type": "phone",
+     "value": "3200"
+    },
+    {
+     "type": "phone",
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-iletisim",
+   "category": "combined",
+   "text": "Adınızı Burak Demir, numaranızı 0533 204 18 76 olarak kaydettim. Ekibimiz bugün 17:00'ye kadar sizi arayacak.",
+   "spoken": "Adınızı Burak Demir, numaranızı sıfır beş yüz otuz üç, iki yüz dört, on sekiz, yetmiş altı olarak kaydettim. Ekibimiz bugün on yediye kadar sizi arayacak.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Burak"
+    },
+    {
+     "type": "name",
+     "value": "Demir"
+    },
+    {
+     "type": "phone",
+     "value": "05332041876"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-kargo",
+   "category": "combined",
+   "text": "Siparişiniz 12 Ekim'de kargoya verildi, takip numarası 4 8 2 0 9 1. Tahmini teslimat 2 iş günü.",
+   "spoken": "Siparişiniz on iki Ekim'de kargoya verildi, takip numarası dört, sekiz, iki, sıfır, dokuz, bir. Tahmini teslimat iki iş günü.",
+   "entities": [
+    {
+     "type": "phone",
+     "value": "12"
+    },
+    {
+     "type": "phone",
+     "value": "482091"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-arac",
+   "category": "combined",
+   "text": "Aracı 5 Kasım Perşembe 09:00'da havalimanından teslim alıp 8 Kasım Pazar 18:00'de bırakıyorsunuz. 3 günlük toplam 5.550 TL.",
+   "spoken": "Aracı beş Kasım Perşembe dokuzda havalimanından teslim alıp sekiz Kasım Pazar on sekizde bırakıyorsunuz. Üç günlük toplam beş bin beş yüz elli lira.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Kasım"
+    },
+    {
+     "type": "name",
+     "value": "Perşembe"
+    },
+    {
+     "type": "name",
+     "value": "Pazar"
+    },
+    {
+     "type": "phone",
+     "value": "5550"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-bilgi-yok",
+   "category": "combined",
+   "text": "Bu konuda elimde doğrulanmış bir bilgi yok, yanlış yönlendirmek istemem. İsterseniz talebinizi ekibimize ileteyim, sizi aynı gün arasınlar."
+  },
+  {
+   "id": "birlesik-calisma-saatleri",
+   "category": "combined",
+   "text": "Hafta içi 09:00-19:00, cumartesi 10:00-16:00 arası açığız. Pazar günleri kapalıyız.",
+   "spoken": "Hafta içi dokuz ile on dokuz, cumartesi on ile on altı arası açığız. Pazar günleri kapalıyız.",
+   "alt": [
+    "Hafta içi dokuz on dokuz, cumartesi on on altı arası açığız. Pazar günleri kapalıyız."
+   ],
+   "entities": [
+    {
+     "type": "phone",
+     "value": "19"
+    },
+    {
+     "type": "phone",
+     "value": "16"
+    },
+    {
+     "type": "name",
+     "value": "cumartesi"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-paket",
+   "category": "combined",
+   "text": "Starter pakette 500 dakika ve 1.000 yazılı konuşma hakkı var. Professional paketi de karşılaştırmamı ister misiniz?",
+   "spoken": "Starter pakette beş yüz dakika ve bin yazılı konuşma hakkı var. Professional paketi de karşılaştırmamı ister misiniz?",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Starter"
+    },
+    {
+     "type": "phone",
+     "value": "500"
+    },
+    {
+     "type": "phone",
+     "value": "1000"
+    },
+    {
+     "type": "name",
+     "value": "Professional"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-eposta",
+   "category": "combined",
+   "text": "Teklifi mert.kaya@ornekfirma.com adresine gönderdim. Gelen kutunuzda göremezseniz spam klasörüne de bakar mısınız?",
+   "spoken": "Teklifi mert nokta kaya et ornekfirma nokta com adresine gönderdim. Gelen kutunuzda göremezseniz spam klasörüne de bakar mısınız?",
+   "entities": [
+    {
+     "type": "email",
+     "value": "mert.kaya@ornekfirma.com"
+    }
+   ]
+  },
+  {
+   "id": "birlesik-adres",
+   "category": "combined",
+   "text": "Şubemiz Bağdat Caddesi No: 214'te, Suadiye durağına 5 dakika yürüme mesafesinde. Otoparkımız var, ilk 2 saat ücretsiz.",
+   "spoken": "Şubemiz Bağdat Caddesi numara iki yüz on dörtte, Suadiye durağına beş dakika yürüme mesafesinde. Otoparkımız var, ilk iki saat ücretsiz.",
+   "entities": [
+    {
+     "type": "name",
+     "value": "Bağdat"
+    },
+    {
+     "type": "name",
+     "value": "Suadiye"
+    },
+    {
+     "type": "phone",
+     "value": "214"
+    }
+   ]
+  }
+ ]
+}

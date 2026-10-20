@@ -1,0 +1,6 @@
+node_modules/
+benchmarks/turkish-tts/runs/
+__pycache__/
+.env
+!.env.example
+.DS_Store

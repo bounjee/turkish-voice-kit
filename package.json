@@ -1,0 +1,22 @@
+{
+  "name": "turkish-voice-kit",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "benchmarks/*"
+  ],
+  "scripts": {
+    "test": "node --import tsx --test packages/*/test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/ws": "8.18.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
