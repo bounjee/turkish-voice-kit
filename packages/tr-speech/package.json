@@ -4,8 +4,34 @@
   "description": "Turkish text-to-speech normalization: numbers, prices, dates, times, phone numbers, IBANs, e-mails and abbreviations to how they are spoken, with correct suffixes.",
   "type": "module",
   "license": "MIT",
-  "exports": "./src/index.ts",
-  "files": ["src"],
-  "keywords": ["turkish", "tts", "text-normalization", "verbalization", "voice-ai", "türkçe"],
-  "repository": { "type": "git", "url": "git+https://github.com/bounjee/turkish-voice-kit.git", "directory": "packages/tr-speech" }
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "turkish",
+    "tts",
+    "text-normalization",
+    "verbalization",
+    "voice-ai",
+    "türkçe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bounjee/turkish-voice-kit.git",
+    "directory": "packages/tr-speech"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }

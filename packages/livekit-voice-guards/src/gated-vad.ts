@@ -1,7 +1,7 @@
 import { TransformStream, type ReadableStream } from "node:stream/web";
 import { VAD, type VADStream } from "@livekit/agents";
 import { AudioFrame } from "@livekit/rtc-node";
-import type { LevelGate } from "./level-gate.ts";
+import type { LevelGate } from "./level-gate.js";
 
 /**
  * Puts any LiveKit VAD (e.g. Silero) behind the level gate (see level-gate.ts). The session feeds

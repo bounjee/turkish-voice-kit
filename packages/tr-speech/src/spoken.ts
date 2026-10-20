@@ -1,4 +1,4 @@
-import { attachSuffix, expandAbbreviations, NOT_DATE_AFTER, spellDigits, verbalizeNumbers, withCase } from "./numbers.ts";
+import { attachSuffix, expandAbbreviations, NOT_DATE_AFTER, spellDigits, verbalizeNumbers, withCase } from "./numbers.js";
 
 /**
  * A spelling alias for a word the TTS engine reads wrongly ("WhatsApp" → "Vatsap"). Matches on word

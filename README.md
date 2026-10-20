@@ -14,7 +14,14 @@ npm test          # 112 unit tests
 npm run typecheck
 ```
 
-Requires Node 22+. The packages ship as TypeScript source and are not on npm yet. Run them with `tsx`, or copy the file you need: most modules are a single file.
+Install the packages from npm:
+
+```bash
+npm install tr-speech
+npm install livekit-voice-guards @livekit/agents @livekit/rtc-node
+```
+
+Developing in this repository requires Node 22+.
 
 ## Why these pieces
 
@@ -28,7 +35,7 @@ Turkish is a hard language for voice AI. Suffixes attach to numbers (`3'te`, `5'
 - **`livekit-voice-guards`**: LiveKit Agents (JS) için Gemini Live konuşma tanıma eklentisi ve gerçek görüşmelerden çıkan düzeltmeler. Kısık ve uzak sesi eleyen düzey kapısı, yankı ve arka plan sesi süzgeçleri, arkadaki kişiyi ayıran katılımcı süzgeci ve tur modeli için süre sınırı bunların arasında.
 - **`turkish-tts`**: Bağımsız Türkçe TTS kıyası. Bir sesli asistanın gün içinde söylediği 189 cümle, 10 model ve tekrar koşulabilen puanlama. Sonuçların yazısı: [Türkçeyi en iyi konuşan ses modelleri](https://dolphydesk.com/blog/turkce-text-to-speech-karsilastirmasi).
 
-Kodun açıklamaları İngilizce; Türkçe kurallar ve örnek cümleler olduğu gibi duruyor.
+Kurulum: `npm install tr-speech` ve `npm install livekit-voice-guards`. Kodun açıklamaları İngilizce; Türkçe kurallar ve örnek cümleler olduğu gibi duruyor.
 
 ## License
 

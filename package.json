@@ -7,6 +7,8 @@
     "benchmarks/*"
   ],
   "scripts": {
+    "build": "npm run build --workspace packages/tr-speech --workspace packages/livekit-voice-guards",
+    "prepare": "npm run build",
     "test": "node --import tsx --test packages/*/test/*.test.ts",
     "typecheck": "tsc -p tsconfig.json"
   },

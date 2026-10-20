@@ -7,7 +7,7 @@ export {
   spellDigits,
   verbalizeNumbers,
   withCase,
-} from "./numbers.ts";
+} from "./numbers.js";
 export {
   DEFAULT_ALIASES,
   speakAddresses,
@@ -16,5 +16,5 @@ export {
   toSpoken,
   type SpokenAlias,
   type ToSpokenOptions,
-} from "./spoken.ts";
-export { digitsOf, entityHit, normalizeTr, spokenEmail, type Entity } from "./normalize.ts";
+} from "./spoken.js";
+export { digitsOf, entityHit, normalizeTr, spokenEmail, type Entity } from "./normalize.js";

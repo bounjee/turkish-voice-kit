@@ -2,6 +2,11 @@
 
 Fixes for [LiveKit Agents](https://github.com/livekit/agents-js) (JS, tested with 1.9.0) voice pipelines, taken from a production voice agent that answers web and phone calls in Turkish. Each module is small and has a single job. The comments in each file record the call that caused the fix and what was measured afterwards.
 
+```bash
+npm install livekit-voice-guards @livekit/agents @livekit/rtc-node
+npm install sherpa-onnx-node   # only for the participant filter
+```
+
 A worker that wires the main modules together is in [`examples/agent.ts`](examples/agent.ts). It is typechecked in CI; running it needs your own LiveKit server and API keys.
 
 | Module | Problem | Fix |
@@ -61,7 +66,7 @@ The two modules left out of the example:
 
 - **Turkish defaults.** The default Turkish turn threshold, the number words ignored by the echo guard and the example's prompt are Turkish. Everything else is language independent.
 - **Thresholds are measurements, not guesses.** Each constant's comment says where it came from. Re-measure on your own calls before you change them.
-- **TypeScript source, not on npm yet.** Copy the files you need or use the workspace. Peer dependencies are `@livekit/agents` ^1.9 and `@livekit/rtc-node`. `sherpa-onnx-node` is needed only for the participant filter.
+- **Dependencies.** Peer dependencies are `@livekit/agents` ^1.9 and `@livekit/rtc-node`. `sherpa-onnx-node` is needed only for the participant filter.
 
 ## License
 

@@ -11,6 +11,10 @@ toSpoken("Kargo 89,90 TL, 750 TL üzeri siparişlerde ücretsiz.");
 
 Apply it only to the text you send to TTS. Keep the digits in the transcript your users see.
 
+```bash
+npm install tr-speech
+```
+
 ## Why
 
 TTS engines read Turkish numbers unreliably: a time comes out as "bir dört sıfır sıfır", a phone number digit by digit. Turkish adds a harder problem. The suffix after a number is written for the number's *reading* (`5'e` = "beşe", `4'e` = "dörde", `3'te` = "üçte"). If the suffix does not merge with the spoken stem, the voice says "beş e" as two words.
